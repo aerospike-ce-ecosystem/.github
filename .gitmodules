@@ -1,0 +1,12 @@
+[submodule "aerospike-py"]
+	path = aerospike-py
+	url = git@github.com:aerospike-ce-ecosystem/aerospike-py.git
+[submodule "aerospike-ce-kubernetes-operator"]
+	path = aerospike-ce-kubernetes-operator
+	url = git@github.com:aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator.git
+[submodule "aerospike-cluster-manager"]
+	path = aerospike-cluster-manager
+	url = git@github.com:aerospike-ce-ecosystem/aerospike-cluster-manager.git
+[submodule "aerospike-ce-ecosystem-plugins"]
+	path = aerospike-ce-ecosystem-plugins
+	url = git@github.com:aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins.git
