@@ -33,8 +33,7 @@ minikube start
 helm install cert-manager jetstack/cert-manager -n cert-manager --create-namespace --set crds.enabled=true --repo https://charts.jetstack.io --wait
 
 helm install -n aerospike-operator --create-namespace acko \
-  oci://ghcr.io/aerospike-ce-ecosystem/charts/aerospike-ce-kubernetes-operator \
-  --version 0.4.6
+  oci://ghcr.io/aerospike-ce-ecosystem/charts/aerospike-ce-kubernetes-operator
 ```
 
 ### 3-1. Open the Cluster Manager UI
