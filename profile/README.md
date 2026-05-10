@@ -27,8 +27,6 @@ kind create cluster
 minikube start
 ```
 
-> **macOS + Podman**: this project standardizes on Podman (ADR 2026-02-01). If you use Podman instead of Docker, prefix the command with `KIND_EXPERIMENTAL_PROVIDER=podman` and ensure `podman machine start` has been run first.
-
 ### 2. Install the operator
 
 ```bash
