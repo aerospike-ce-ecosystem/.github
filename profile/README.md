@@ -1,11 +1,13 @@
-# Aerospike CE Ecosystem
+<h1 align="center">Aerospike CE Ecosystem</h1>
 
-An open-source integrated tooling ecosystem for Aerospike Community Edition.
+<p align="center"><strong>An open-source integrated tooling ecosystem for Aerospike Community Edition.</strong></p>
 
-Declarative Kubernetes deployment · High-performance Python client · Web management UI · CLI control plane · AI development support — a complete stack for operating Aerospike CE.
+<p align="center">Declarative Kubernetes deployment · High-performance Python client · Web management UI · CLI control plane · AI development support — a complete stack for operating Aerospike CE.</p>
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Project Hub](https://img.shields.io/badge/docs-Project%20Hub-6f42c1)](https://aerospike-ce-ecosystem.github.io/project-hub/)
+<p align="center">
+  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-0B1F33.svg" /></a>
+  <a href="https://aerospike-ce-ecosystem.github.io/project-hub/"><img alt="Project Hub" src="https://img.shields.io/badge/docs-Project%20Hub-FFC72C?logo=readthedocs&amp;logoColor=0B1F33" /></a>
+</p>
 
 > 📋 **[Project Hub](https://aerospike-ce-ecosystem.github.io/project-hub/)** — The central hub for the ecosystem. Architecture diagrams, ADRs, roadmap, and PR history for all five projects in one place. ([GitHub](https://github.com/aerospike-ce-ecosystem/project-hub))
 
@@ -14,10 +16,10 @@ Declarative Kubernetes deployment · High-performance Python client · Web manag
 | Project | Description | Release | Links |
 |---------|-------------|:-------:|-------|
 | **[Ecosystem Plugins](https://github.com/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins)** | Claude Code plugin — ACKO deploy/ops/debug guides, aerospike-py API reference, ackoctl usage, and a bug reporter. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins/releases/latest) | [GitHub](https://github.com/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins) |
-| **[aerospike-py](https://github.com/aerospike-ce-ecosystem/aerospike-py)** | High-performance Python client built on Rust bindings. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-py?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-py/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-py/) · [PyPI](https://pypi.org/project/aerospike-py/) |
-| **[ACKO](https://github.com/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator)** | Aerospike CE Kubernetes Operator. Declarative cluster management via CRDs. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-ce-kubernetes-operator/) |
-| **[Cluster Manager](https://github.com/aerospike-ce-ecosystem/aerospike-cluster-manager)** | Web-based Aerospike management UI with monitoring, record browser, and query builder. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-cluster-manager?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-cluster-manager/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-ce-kubernetes-operator/guide/cluster-manager-ui) |
-| **[ackoctl](https://github.com/aerospike-ce-ecosystem/ackoctl)** | Go CLI for Cluster Manager. Manage connections, records, queries, and ACKO reconciliations from terminal or CI. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/ackoctl?color=green)](https://github.com/aerospike-ce-ecosystem/ackoctl/releases/latest) | [Install](https://github.com/aerospike-ce-ecosystem/ackoctl#install) |
+| <a href="https://github.com/aerospike-ce-ecosystem/aerospike-py"><img src="https://raw.githubusercontent.com/aerospike-ce-ecosystem/aerospike-py/main/docs/static/img/icon.svg" width="28" alt="" /> <strong>aerospike-py</strong></a> | High-performance Python client built on Rust bindings. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-py?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-py/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-py/) · [PyPI](https://pypi.org/project/aerospike-py/) |
+| <a href="https://github.com/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator"><img src="https://raw.githubusercontent.com/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator/main/docs/static/img/icon.svg" width="28" alt="" /> <strong>ACKO</strong></a> | Aerospike CE Kubernetes Operator. Declarative cluster management via CRDs. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-ce-kubernetes-operator/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-ce-kubernetes-operator/) |
+| <a href="https://github.com/aerospike-ce-ecosystem/aerospike-cluster-manager"><img src="https://raw.githubusercontent.com/aerospike-ce-ecosystem/aerospike-cluster-manager/main/ui/public/acm-icon.svg" width="28" alt="" /> <strong>Cluster Manager</strong></a> | Web-based Aerospike management UI with monitoring, record browser, and query builder. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/aerospike-cluster-manager?color=green)](https://github.com/aerospike-ce-ecosystem/aerospike-cluster-manager/releases/latest) | [Docs](https://aerospike-ce-ecosystem.github.io/aerospike-ce-kubernetes-operator/guide/cluster-manager-ui) |
+| <a href="https://github.com/aerospike-ce-ecosystem/ackoctl"><img src="https://raw.githubusercontent.com/aerospike-ce-ecosystem/ackoctl/main/docs/images/icon.svg" width="28" alt="" /> <strong>ackoctl</strong></a> | Go CLI for Cluster Manager. Manage connections, records, queries, and ACKO reconciliations from terminal or CI. | [![release](https://img.shields.io/github/v/release/aerospike-ce-ecosystem/ackoctl?color=green)](https://github.com/aerospike-ce-ecosystem/ackoctl/releases/latest) | [Install](https://github.com/aerospike-ce-ecosystem/ackoctl#install) |
 
 ## Quick Start
 
