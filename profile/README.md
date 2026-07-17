@@ -37,7 +37,19 @@ claude plugin install aerospike-ce-ecosystem
 claude plugin list   # aerospike-ce-ecosystem@aerospike-ce-ecosystem ✔ enabled
 ```
 
-Bundles 9 skills — `acko-deploy`, `acko-operations`, `acko-config-reference`, `acko-e2e-test`, `acko-debugging`, `ackoctl`, `aerospike-py-api`, `aerospike-py-fastapi`, and `bug-reporter` — so Claude Code can deploy, operate, and debug the whole stack. See the [plugin repo](https://github.com/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins) for details.
+Bundles 9 skills so Claude Code can deploy, operate, and debug the whole stack:
+
+- **`acko-deploy`** — deploy Aerospike CE clusters on Kubernetes
+- **`acko-operations`** — day-2 operations: scale, upgrade, dynamic config
+- **`acko-config-reference`** — CE config parameters, CRD mapping, webhook validation
+- **`acko-e2e-test`** — end-to-end ACKO test playbook
+- **`acko-debugging`** — systematic cluster debugging (CrashLoopBackOff, reconcile failures)
+- **`ackoctl`** — CLI for connections, records, queries, and secondary indexes
+- **`aerospike-py-api`** — full Python client API reference
+- **`aerospike-py-fastapi`** — FastAPI + Aerospike production patterns
+- **`bug-reporter`** — route ecosystem bugs to the right repo
+
+See the [plugin repo](https://github.com/aerospike-ce-ecosystem/aerospike-ce-ecosystem-plugins) for details.
 
 </details>
 
