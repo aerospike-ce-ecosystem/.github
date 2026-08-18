@@ -1,0 +1,23 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/aerospike-ce-ecosystem/.github/blob/main/SECURITY.md
+    about: >
+      Do not open a public issue for a security problem. Use private
+      vulnerability reporting or email — SECURITY.md has both routes.
+
+  - name: Documentation, ADRs, and roadmap
+    url: https://aerospike-ce-ecosystem.github.io/project-hub/
+    about: >
+      Architecture diagrams, decision records, release compatibility matrix,
+      and roadmap for every project in one place.
+
+  - name: Cross-repository issue or epic
+    url: https://github.com/aerospike-ce-ecosystem/project-hub/issues/new/choose
+    about: >
+      For work spanning more than one project, or to propose an architecture
+      decision (ADR), file it in project-hub instead of here.
+
+  - name: Contributing guide
+    url: https://github.com/aerospike-ce-ecosystem/.github/blob/main/CONTRIBUTING.md
+    about: Setup, commit conventions, review expectations, and CE constraints.
