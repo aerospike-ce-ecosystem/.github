@@ -1,0 +1,133 @@
+name: Bug report
+description: Something in the Aerospike CE Ecosystem does not work as documented
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        **Found a security vulnerability?** Close this and follow
+        [SECURITY.md](https://github.com/aerospike-ce-ecosystem/.github/blob/main/SECURITY.md)
+        instead — do not describe it in a public issue.
+
+        The version and environment fields below are required. Most reports
+        that cannot be reproduced are missing exactly those.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component?
+      description: If more than one is involved, pick where you observed the failure.
+      options:
+        - aerospike-py (Python client)
+        - ACKO (Kubernetes operator)
+        - aerospike-cluster-manager (web UI / API)
+        - ackoctl (CLI)
+        - aerospike-ce-ecosystem-plugins (Claude Code skills)
+        - project-hub (docs site)
+        - workspace (meta-repo, Makefile, submodules)
+        - homebrew-tap
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Component version
+      description: >
+        The exact version, not "latest". SECURITY.md lists the command for each
+        component — e.g. `ackoctl version`, or
+        `python -c "import aerospike_py; print(aerospike_py.__version__)"`.
+      placeholder: "aerospike-py 0.14.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you observed, and what you expected instead.
+      placeholder: |
+        Expected: batch_write returns a BatchRecords with in_doubt=False for every record
+        Actual:   in_doubt is True for records the server acknowledged
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: >
+        The smallest sequence that reproduces it. A runnable snippet or a
+        manifest beats prose. If it only reproduces intermittently, say how
+        often.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, stack trace, or error output
+      description: >
+        Paste the actual output. Redact hostnames, credentials, and data.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: >
+        Fill in what applies to your component. Delete lines that do not.
+      value: |
+        OS / arch:
+        Python version:
+        Go version:
+        Node version:
+        Kubernetes version (kubectl version --short):
+        Kubernetes distribution (kind / k3s / EKS / GKE / other):
+        Container runtime (podman / docker / containerd):
+        Aerospike CE server version (asinfo -v build):
+        Install method (pip / helm / brew / installer script / from source):
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Did this work in an earlier version?
+      options:
+        - "No — first time I have tried it"
+        - "Yes — it worked before, this is a regression"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: input
+    id: last-good-version
+    attributes:
+      label: Last known good version
+      description: If this is a regression, which version worked?
+      placeholder: "aerospike-py 0.13.2"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: >
+            I am reporting a defect in this project, not a limitation of
+            Aerospike Community Edition itself (max 8 nodes, max 2 namespaces,
+            no XDR/TLS/enterprise security)
+          required: true
+        - label: This is not a security vulnerability
+          required: true

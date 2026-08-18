@@ -1,0 +1,98 @@
+name: Feature request
+description: Propose a change or addition to one of the ecosystem projects
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals that change an interface *between* projects, add a
+        dependency, or would be expensive to reverse should go through the ADR
+        process in
+        [project-hub](https://github.com/aerospike-ce-ecosystem/project-hub/issues/new/choose)
+        instead. This template is for changes contained within one project.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component?
+      options:
+        - aerospike-py (Python client)
+        - ACKO (Kubernetes operator)
+        - aerospike-cluster-manager (web UI / API)
+        - ackoctl (CLI)
+        - aerospike-ce-ecosystem-plugins (Claude Code skills)
+        - project-hub (docs site)
+        - workspace (meta-repo, Makefile, submodules)
+        - homebrew-tap
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version you are using
+      description: Which version prompted this? Behaviour may already have changed.
+      placeholder: "ACKO v1.10.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: >
+        Describe the situation you are in, not the solution you have in mind.
+        The most useful proposals start from a concrete case where the current
+        behaviour got in your way.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+      description: >
+        Sketch the API, flag, CRD field, or UI you have in mind. A rough
+        example of the code or manifest as you would want to write it helps
+        more than a paragraph of description.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What have you tried or considered instead?
+      description: >
+        Including workarounds you are using today. If an existing feature
+        nearly does this, say which and why it falls short.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: cross-repo
+    attributes:
+      label: Would this require changes in more than one repository?
+      description: >
+        The dependency chain is aerospike-py → ACKO → cluster-manager →
+        plugins. Anything crossing it is coordinated from project-hub.
+      options:
+        - "No — one repository only"
+        - "Yes — more than one repository"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: >
+            This is compatible with Aerospike Community Edition (max 8 nodes,
+            max 2 namespaces, no XDR/TLS/enterprise security), or I have
+            explained why it is worth supporting anyway
+          required: true
